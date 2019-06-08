@@ -13,14 +13,14 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:element name="Quantity" type="xs:string"/>
+    <xs:element name="Quantity" type="xs:decimal"/>
     <xs:element name="Description" type="xs:string"/>
-    <xs:element name="Unit_price" type="xs:string"/>
-    <xs:element name="Tax" type="xs:string"/>
-    <xs:element name="Net" type="xs:string"/>
-    <xs:element name="Gross" type="xs:string"/>
-    <xs:element name="Amount" type="xs:string"/>
-    <xs:element name="Invoice_ID" type="xs:string"/>
+    <xs:element name="Unit_price" type="xs:decimal"/>
+    <xs:element name="Tax" type="xs:decimal"/>
+    <xs:element name="Net" type="xs:decimal"/>
+    <xs:element name="Gross" type="xs:decimal"/>
+    <xs:element name="Amount" type="xs:decimal"/>
+    <xs:element name="Invoice_ID" type="xs:integer"/>
     <xs:element name="Seller">
         <xs:complexType>
             <xs:sequence>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Invoice>
+    <Invoice_ID>1</Invoice_ID>
+    <Seller>
+        <FirstName>sellerName</FirstName>
+        <LastName>sellerLastName</LastName>
+        <ContactNo>sellerNumber</ContactNo>
+        <Email>seller@email.com</Email>
+        <Address>
+            <City>sellerAddressCityStreet</City>
+            <Street>sellerAddress</Street>
+        </Address>
+    </Seller>
+    <Payer>
+        <FirstName>payerName</FirstName>
+        <LastName>payerLastName</LastName>
+        <ContactNo>payerNumber</ContactNo>
+        <Email>payer@email.com</Email>
+        <Address>
+            <City>payerAddressCity</City>
+            <Street>payerAddressStreet</Street>
+        </Address>
+    </Payer>
+    <Product>
+        <Description>testProduct1</Description>
+        <Amount>1.0</Amount>
+    </Product>
+    <Product>
+        <Description>testProduct2</Description>
+        <Amount>1.0</Amount>
+    </Product>
+</Invoice>
