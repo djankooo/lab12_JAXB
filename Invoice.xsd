@@ -1,0 +1,70 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="City" type="xs:string"/>
+    <xs:element name="Street" type="xs:string"/>
+    <xs:element name="FirstName" type="xs:string"/>
+    <xs:element name="LastName" type="xs:string"/>
+    <xs:element name="ContactNo" type="xs:string"/>
+    <xs:element name="Email" type="xs:string"/>
+    <xs:element name="Address">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="City"/>
+                <xs:element ref="Street"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Quantity" type="xs:string"/>
+    <xs:element name="Description" type="xs:string"/>
+    <xs:element name="Unit_price" type="xs:string"/>
+    <xs:element name="Tax" type="xs:string"/>
+    <xs:element name="Net" type="xs:string"/>
+    <xs:element name="Gross" type="xs:string"/>
+    <xs:element name="Amount" type="xs:string"/>
+    <xs:element name="Invoice_ID" type="xs:string"/>
+    <xs:element name="Seller">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="FirstName"/>
+                <xs:element ref="LastName"/>
+                <xs:element ref="ContactNo"/>
+                <xs:element ref="Email"/>
+                <xs:element ref="Address"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Payer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="FirstName"/>
+                <xs:element ref="LastName"/>
+                <xs:element ref="ContactNo"/>
+                <xs:element ref="Email"/>
+                <xs:element ref="Address"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Product">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Quantity"/>
+                <xs:element ref="Description"/>
+                <xs:element ref="Unit_price"/>
+                <xs:element ref="Tax"/>
+                <xs:element ref="Net"/>
+                <xs:element ref="Gross"/>
+                <xs:element ref="Amount"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Invoice">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Invoice_ID"/>
+                <xs:element ref="Seller"/>
+                <xs:element ref="Payer"/>
+                <xs:element ref="Product"/>
+                <xs:element ref="Amount"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
