@@ -1,22 +1,19 @@
 package jaxb;
 
 import jaxb_invoice.*;
-
 import java.io.File;
 import java.math.BigDecimal;
 import java.math.BigInteger;
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
 
-public class MarshallerExample {
+public class Marshaller {
 
     public static void main(String[] args) throws JAXBException {
 
         JAXBContext ctx = JAXBContext.newInstance(Invoice.class);
-        Marshaller marshaller = ctx.createMarshaller();
-        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+        javax.xml.bind.Marshaller marshaller = ctx.createMarshaller();
+        marshaller.setProperty(javax.xml.bind.Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
         Address payerAddress = new Address();
         payerAddress.setStreet("payerAddressStreet");
