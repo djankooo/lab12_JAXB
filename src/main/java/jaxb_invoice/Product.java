@@ -8,12 +8,8 @@
 
 package jaxb_invoice;
 
+import javax.xml.bind.annotation.*;
 import java.math.BigDecimal;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -28,7 +24,6 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element ref="{}Quantity"/>
  *         &lt;element ref="{}Description"/>
- *         &lt;element ref="{}Unit_price"/>
  *         &lt;element ref="{}Tax"/>
  *         &lt;element ref="{}Net"/>
  *         &lt;element ref="{}Gross"/>
@@ -45,7 +40,6 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "quantity",
     "description",
-    "unitPrice",
     "tax",
     "net",
     "gross",
@@ -58,8 +52,6 @@ public class Product {
     protected BigDecimal quantity;
     @XmlElement(name = "Description", required = true)
     protected String description;
-    @XmlElement(name = "Unit_price", required = true)
-    protected BigDecimal unitPrice;
     @XmlElement(name = "Tax", required = true)
     protected BigDecimal tax;
     @XmlElement(name = "Net", required = true)
@@ -68,6 +60,18 @@ public class Product {
     protected BigDecimal gross;
     @XmlElement(name = "Amount", required = true)
     protected BigDecimal amount;
+
+    public Product() {
+    }
+
+    public Product(BigDecimal quantity, String description, BigDecimal tax, BigDecimal net, BigDecimal gross, BigDecimal amount) {
+        this.quantity = quantity;
+        this.description = description;
+        this.tax = tax;
+        this.net = net;
+        this.gross = gross;
+        this.amount = amount;
+    }
 
     /**
      * Gets the value of the quantity property.
@@ -115,30 +119,6 @@ public class Product {
      */
     public void setDescription(String value) {
         this.description = value;
-    }
-
-    /**
-     * Gets the value of the unitPrice property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getUnitPrice() {
-        return unitPrice;
-    }
-
-    /**
-     * Sets the value of the unitPrice property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setUnitPrice(BigDecimal value) {
-        this.unitPrice = value;
     }
 
     /**

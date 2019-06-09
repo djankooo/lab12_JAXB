@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<payer>
-    <lastName>lastName</lastName>
-    <contactNumber>contactNumber</contactNumber>
-    <email>email</email>
-    <city>city</city>
-    <street>street</street>
-</payer>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Invoice>
+    <Seller>
+        <FirstName></FirstName>
+        <LastName></LastName>
+        <ContactNo></ContactNo>
+        <Address>
+            <City></City>
+            <Street></Street>
+        </Address>
+    </Seller>
+    <Payer>
+        <FirstName></FirstName>
+        <LastName></LastName>
+        <ContactNo></ContactNo>
+        <Address>
+            <City></City>
+            <Street></Street>
+        </Address>
+    </Payer>
+    <Product>
+        <Quantity>1</Quantity>
+        <Description>asd</Description>
+        <Tax>12</Tax>
+        <Net>13</Net>
+        <Gross>14</Gross>
+        <Amount>1</Amount>
+    </Product>
+    <Product>
+        <Quantity>1</Quantity>
+        <Description>1</Description>
+        <Tax>2</Tax>
+        <Net>3</Net>
+        <Gross>4</Gross>
+        <Amount>3.24</Amount>
+    </Product>
+</Invoice>
