@@ -1,37 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Invoice>
+    <Invoice_ID>invoice_2</Invoice_ID>
     <Seller>
-        <FirstName></FirstName>
-        <LastName></LastName>
-        <ContactNo></ContactNo>
+        <FirstName>q</FirstName>
+        <LastName>w</LastName>
+        <ContactNo>e</ContactNo>
         <Address>
-            <City></City>
-            <Street></Street>
+            <City>t</City>
+            <Street>r</Street>
         </Address>
     </Seller>
     <Payer>
-        <FirstName></FirstName>
-        <LastName></LastName>
-        <ContactNo></ContactNo>
+        <FirstName>y</FirstName>
+        <LastName>u</LastName>
+        <ContactNo>i</ContactNo>
         <Address>
-            <City></City>
-            <Street></Street>
+            <City>p</City>
+            <Street>o</Street>
         </Address>
     </Payer>
     <Product>
         <Quantity>1</Quantity>
-        <Description>asd</Description>
-        <Tax>12</Tax>
-        <Net>13</Net>
-        <Gross>14</Gross>
-        <Amount>1</Amount>
-    </Product>
-    <Product>
-        <Quantity>1</Quantity>
-        <Description>1</Description>
-        <Tax>2</Tax>
-        <Net>3</Net>
-        <Gross>4</Gross>
-        <Amount>3.24</Amount>
+        <Description>123</Description>
+        <Tax>123</Tax>
+        <Net>321</Net>
+        <Gross>23</Gross>
+        <Amount>9402.09</Amount>
     </Product>
 </Invoice>

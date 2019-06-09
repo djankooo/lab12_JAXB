@@ -10,7 +10,6 @@ package jaxb_invoice;
 
 import javax.xml.bind.annotation.*;
 import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.ArrayList;
 
 
@@ -49,7 +48,7 @@ import java.util.ArrayList;
 public class Invoice {
 
     @XmlElement(name = "Invoice_ID", required = true)
-    protected BigInteger invoiceID;
+    protected String invoiceID;
     @XmlElement(name = "Seller", required = true)
     protected Seller seller;
     @XmlElement(name = "Payer", required = true)
@@ -64,10 +63,10 @@ public class Invoice {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getInvoiceID() {
+    public String getInvoiceID() {
         return invoiceID;
     }
 
@@ -76,10 +75,10 @@ public class Invoice {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setInvoiceID(BigInteger value) {
+    public void setInvoiceID(String value) {
         this.invoiceID = value;
     }
 
